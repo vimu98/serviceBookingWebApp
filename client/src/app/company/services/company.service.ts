@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { UserStorageService } from 'src/app/basic/services/storage/user-storage.service';
 
-const  BASIC_URL = "https://servicebooking-appbackend-13388ffb11a5.herokuapp.com/";
+const  BASIC_URL = "https://service-booking-app-backend-4124fad6cd33.herokuapp.com/";
 
 @Injectable({
   providedIn: 'root'

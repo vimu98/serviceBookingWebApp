@@ -1,0 +1,75 @@
+/* Container background and spacing */
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Set to relative to position child elements absolutely */
+}
+
+/* Main content layout */
+.content {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.content img {
+    height: 130px;
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.details {
+    flex: 1;
+}
+
+
+.details h5 {
+    margin: 10px 0;
+}
+
+/* Booking form styling */
+.booking-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for the booking card */
+    position: absolute;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+}
+
+/* Reviews section styling */
+.reviews {
+    margin-top: 20px;
+}
+
+.review-card {
+    margin-bottom: 15px;
+}
+
+.review-card nz-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .booking-form {
+        width: 100%;
+        position: static; /* Change to static for small screens */
+        margin: 20px 0; /* Add margin to separate from other content */
+    }
+}

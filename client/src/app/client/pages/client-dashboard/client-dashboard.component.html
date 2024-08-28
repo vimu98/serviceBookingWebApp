@@ -1,0 +1,26 @@
+<form nz-form [formGroup]="validateForm" (submit)="searchAdByName()" style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+    <input nz-input placeholder="Enter service to search" nzSize="large" style="width: 20%; border-radius: 10px;" formControlName="service"/>
+    <button nz-button nzSize="large" nzType="primary" style="margin-left: 15px; border-radius: 10px;" [disabled]="validateForm.invalid">Search</button>
+</form>
+<div>
+    <div class="card" style="margin-top: 10px;" *ngFor="let ad of ads">
+        <div nz-col nzSpan="8">
+            <img [src]="updateImg(ad.returnedImg)" style="height: 130px; width: 200px; border-radius: 10px;"/>
+        </div>
+        <div nz-col nzSpan="16" class="card-content">
+            <h2 style="cursor: pointer; color: rgb(21, 0, 255);">{{ad.serviceName}}</h2>
+        
+            <h5 style="color: rgb(6, 143, 106);">
+                <b>Rs. {{ad.price}}</b>
+            </h5>
+            
+            <h5>
+               <b> Description : </b>{{ad.description}}
+            </h5>
+            
+            <div style="float: right;" class="card-footer">
+               <button nzSize="small" nz-button nzType="primary" routerLink="/client/ad/{{ad.id}}" style="border-radius: 10px;">View</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="parent">
+    <div class="child">
+        <div nz-row class="imgDiv">
+            <h2>Update Ad</h2>
+        </div>
+        <form nz-form [formGroup]="validateForm" (ngSubmit)="updateAd()">
+            <div nz-row>
+                <div style="position: relative;">
+                    <label for="file-upload">
+                        <input type="file" id="file-upload" accept="image/x-png,image/gif,image/jpeg" (change)="onFileSelected($event)" />
+                    </label>
+                    <div *ngIf="imagePreview">
+                        <img [src]="imagePreview" alt="Existing Image" />
+                    </div>
+                    <div *ngIf="existingImage">
+                        <img [src]="existingImage" alt="Existing Image" />
+                    </div>
+                </div>
+                <div nz-col nzSpan="24" style="margin-top: 20px;">
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                            <input nz-input placeholder="Service Name" formControlName="serviceName" />
+                        </nz-form-control>
+                    </nz-form-item>
+                </div>
+                <div nz-col nzSpan="24" style="margin-top: 20px;">
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                            <input nz-input placeholder="Price" formControlName="price" type="number" />
+                        </nz-form-control>
+                    </nz-form-item>
+                </div>
+                <div nz-col nzSpan="24" style="margin-top: 20px;">
+                    <nz-form-item>
+                        <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                            <textarea rows="1" nz-input placeholder="Description" formControlName="description"></textarea>
+                        </nz-form-control>
+                    </nz-form-item>
+                </div>
+                <button nz-button [nzType]="'primary'" style="margin-top: 20px;">Update Ad</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+/* Background Styling */
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  /* Parent Div Styling */
+  .parent {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Child Div Styling */
+  .child {
+    width: 100%;
+  }
+  
+  /* Image Division Styling */
+  .imgDiv {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .imgDiv h1 {
+    margin-left: 0; /* Centered, no need for margin */
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  /* Form Styling */
+  .login-form {
+    width: 100%;
+  }
+  
+  .nz-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .nz-form-control {
+    width: 100%;
+  }
+  
+  .nz-input-group {
+    width: 100%;
+  }
+  
+  input[nz-input] {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[nz-input]::placeholder {
+    color: #bfbfbf;
+  }
+  
+  button.login-form-button {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  button.login-form-button.login-form-margine {
+    margin-top: 16px;
+  }
+  
+  .login-form-button:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  
+  a {
+    color: #1890ff;
+  }
+  
+  a:hover {
+    color: #40a9ff;
+    text-decoration: underline;
+  }
+  

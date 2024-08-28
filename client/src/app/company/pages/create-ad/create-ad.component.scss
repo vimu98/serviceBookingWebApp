@@ -1,0 +1,104 @@
+/* Container for the form */
+.parent {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Adjust based on your needs */
+    margin: 20px auto; /* Center the form */
+    position: relative;
+}
+
+/* Header styling */
+.imgDiv h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form item spacing */
+.nz-form-item {
+    margin-bottom: 20px;
+}
+
+/* Form control styling */
+.nz-form-control {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and textarea styling */
+input[nz-input], textarea[nz-input] {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 12px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* File input styling */
+input[type="file"] {
+    position: absolute;
+    top: -9999px; /* Hide the default file input */
+}
+
+label[for="upload_profile-image"] {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: #f9f9f9;
+    color: #007bff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px;
+}
+
+label[for="upload_profile-image"]:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+label[for="upload_profile-image"]::before {
+    content: "Select Image";
+}
+
+label[for="upload_profile-image"] img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Submit button styling */
+button[nz-button] {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+button[nz-button][nzType="primary"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+button[nz-button][nzType="primary"]:hover {
+    background-color: #0056b3;
+}
